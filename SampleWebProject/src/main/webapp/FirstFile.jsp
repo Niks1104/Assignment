@@ -12,7 +12,13 @@ hello
 <%! int count=0; %> <!-- Declaration tag-Runs only once when object creates -->
 <% count++; %> <!-- Scriptlet tag-Runs every time -->
 <%= count %> <!-- Expression tag- Prints output -->
+
+<!-- include shows the data of both pages (FirstFile.jsp + FromAction.jsp -->
 <jsp:include page="FromAction.jsp"></jsp:include>
+
+<!-- forward only shows the data of FromAction.jsp -->
+<!-- In both condition link will be of this page (FirstFile.jsp) -->
+<jsp:forward page="FromAction.jsp"></jsp:forward> 
 </body>
 </html>
 

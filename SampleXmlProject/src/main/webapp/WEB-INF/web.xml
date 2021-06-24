@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SampleXmlProject</display-name>
+  
+  <!-- context is for application mapping so it is accessible anywhere or in any file  -->
+  <context-param>
+     <param-name>company</param-name>
+     <param-value>ABC</param-value>
+ </context-param>
+ 
+ <!-- config is for per jsp mapping or per servlet mapping so it can be accessible only in particular file  -->
+ <servlet>
+ <servlet-name>jsp1</servlet-name>
+ <jsp-file>/ConfigParam.jsp</jsp-file>
+ <init-param>
+     <param-name>dname</param-name>
+     <param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+ </init-param>
+ </servlet>
+
+ <servlet-mapping>
+     <servlet-name>jsp1</servlet-name>
+     <url-pattern>/configparam1</url-pattern>
+ </servlet-mapping>
+
+</web-app>
