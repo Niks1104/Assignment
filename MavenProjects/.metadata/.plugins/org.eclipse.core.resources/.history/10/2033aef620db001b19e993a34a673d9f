@@ -1,0 +1,5 @@
+package com.test.hibernate.examples.dto;
+
+public class Vehicle {
+
+}

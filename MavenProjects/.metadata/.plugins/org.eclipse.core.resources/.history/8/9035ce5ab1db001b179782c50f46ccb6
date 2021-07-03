@@ -1,0 +1,5 @@
+package com.test.hibernate.example.dto;
+
+public class UserDetails {
+
+}
